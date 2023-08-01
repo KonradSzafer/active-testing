@@ -119,7 +119,7 @@ class _ActiveTestingDataset(_Dataset):
         self.start()
 
     def start(self):
-        self.test_observed = np.array([], dtype=np.int)
+        self.test_observed = np.array([], dtype=int)
         self.test_remaining = self.test_idxs
 
     def restart(self):
@@ -269,7 +269,7 @@ class MNISTDataset(_ActiveTestingDataset):
         x = x.astype(np.float32) / 255
         x = x.reshape(x.shape[0], -1)
         y = np.concatenate([y_train, y_test], 0)
-        y = y.astype(np.int)
+        y = y.astype(int)
 
         N = self.N
 

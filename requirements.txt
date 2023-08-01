@@ -1,13 +1,13 @@
 # conda create -n isactive python=3.8
 # conda activate isactive
 # pip install -r requirements.txt
-torch==1.7.0
-tensorflow
-numpy
+torch==1.11.0
+numpy==1.24
+# tensorflow
 hydra-core
 omegaconf
 scikit-learn
-pandas
+pandas==1.5
 torchvision
 jupyterlab
 notebook
